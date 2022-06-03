@@ -156,7 +156,7 @@ public class DataController {
     public String updateDummy(@PathVariable("id") int id, Model m) throws Exception {
         Dummy d = dummyCtrl.findDummy(id);
         m.addAttribute("data", d);
-        return "dummy/update";
+        return "editdata";
     }
 
     @PostMapping(value = "/update", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)

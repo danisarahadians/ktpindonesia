@@ -34,7 +34,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     <td></td>
                     <td>
                         <a href="/detail">Detail</a>
-                        <a href="/edit">Edit</a>
+                        <a th:href="@{/edit/{id}(id=${godata.id})}" class="btn btn-warning bgn-sm " >Edit</a>
                         <a th:href="@{/hapus/{id}(id=${godata.id})}">Delete</a>
                     </td>
                 </tr>
